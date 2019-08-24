@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name= "Test Maven Suite">
+
+
+<test  name="Test Maven Testing">
+   
+   <classes>
+	   <class name="com.isd.qa.testcases.NAUSIND"/>
+	   
+	 </classes>
+</test>
+
+
+
+
+
+
+
+
+</suite>
