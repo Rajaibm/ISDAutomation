@@ -2,7 +2,6 @@ package com.isd.qa.testcases;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
-import org.testng.asserts.SoftAssert;
 
 import com.isd.qa.base.TestBase;
 import com.isd.qa.pages.AggregatedSAQDataComparison;
@@ -13,7 +12,7 @@ import com.isd.qa.pages.KDTwistydata;
 import com.isd.qa.pages.KDlayout;
 import com.isd.qa.pages.KPISummaryDetail;
 import com.isd.qa.pages.Logoutprofile;
-import com.isd.qa.pages.ProfileNA;
+
 
 public class NAUSIND extends TestBase {
 	
@@ -24,7 +23,7 @@ public void initialpagelogin() throws Exception{
 ISDLoginPage loginpage = PageFactory.initElements(driver, ISDLoginPage.class);
 
 	loginpage.setEmail("rajagre@in.ibm.com");
-	loginpage.setPassword("Raja@welcome1991");
+	loginpage.setPassword("test2020@123456789");
 	loginpage.clickOnLoginButton();
 		 
 /*ProfileNA  ProfileNA= PageFactory.initElements(driver, ProfileNA.class); 

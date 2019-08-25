@@ -20,7 +20,7 @@ public void initialpagelogin() throws Exception{
 ISDLoginPage loginpage = PageFactory.initElements(driver, ISDLoginPage.class);
 
 loginpage.setEmail("rajagre@in.ibm.com");
-loginpage.setPassword("Raja@welcome1991");
+loginpage.setPassword("test2020@123456789");
 loginpage.clickOnLoginButton();
 	 
 HomePage  Homepage= PageFactory.initElements(driver, HomePage.class); 
