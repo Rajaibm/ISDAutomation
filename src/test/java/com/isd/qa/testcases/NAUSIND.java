@@ -114,6 +114,16 @@ KPISummaryDetail  KPISummaryDetail = PageFactory.initElements(driver, KPISummary
     Thread.sleep(1000);
     KPISummaryDetail.roadMap_WsrKeyStretch();
     
+KDAllviewsComparison KDAllviewsComparison = PageFactory.initElements(driver, KDAllviewsComparison.class);     
+    
+    KDAllviewsComparison.views_SummaryDtl();
+    
+ KDTwistydata KDTwistydata = PageFactory.initElements(driver, KDTwistydata.class);   
+    KDTwistydata.kd_TWisty();
+    KDTwistydata.plusmiustwistie();
+    KDTwistydata.dealsmatchtwistie();
+    KDTwistydata.twistypagination();
+	
 ExpandDataTable expandtable= PageFactory.initElements(driver, ExpandDataTable.class);
     expandtable.ESexpandtable();
     Thread.sleep(500);
@@ -140,18 +150,10 @@ AggregatedSAQDataComparison  AggregatedSAQDataComparison= PageFactory.initElemen
 		
 
     
-KDAllviewsComparison KDAllviewsComparison = PageFactory.initElements(driver, KDAllviewsComparison.class);     
+
     
-    KDAllviewsComparison.views_SummaryDtl();
-    
- KDTwistydata KDTwistydata = PageFactory.initElements(driver, KDTwistydata.class);   
-    KDTwistydata.kd_TWisty();
-    KDTwistydata.plusmiustwistie();
-    KDTwistydata.dealsmatchtwistie();
-    KDTwistydata.twistypagination();
-    
-    KDlayout KDlayout = PageFactory.initElements(driver, KDlayout.class); 
-    KDlayout.gearIcon();
+    //KDlayout KDlayout = PageFactory.initElements(driver, KDlayout.class); 
+    //KDlayout.gearIcon();
     
  Logoutprofile  landingpage= PageFactory.initElements(driver, Logoutprofile.class); 
     Thread.sleep(1000);
