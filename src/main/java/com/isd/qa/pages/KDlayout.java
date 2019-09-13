@@ -3,6 +3,8 @@ package com.isd.qa.pages;
 
 
 import java.util.List;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -43,6 +45,7 @@ public class KDlayout {
   public void gearIcon() throws InterruptedException {
 	  
 //	  test = extent.createTest("gearIcon");
+      driver.findElement(By.xpath("//*[@id='keydeals']")).click();
 	  JavascriptExecutor javascriptExecutor = (JavascriptExecutor) driver;
 	  NgWebDriver ngWebDriver = new NgWebDriver(javascriptExecutor);
       Actions actions = new Actions(driver);

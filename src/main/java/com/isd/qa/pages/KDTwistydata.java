@@ -33,7 +33,7 @@ public class KDTwistydata {
   public void kd_TWisty() throws InterruptedException {
 	  
 //	  test = extent.createTest("KDTWisty");
-	  driver.findElement(By.xpath("//*[@class='expand-icon']")).click();
+	  
 	  driver.findElement(locatorClass.tab_KeyDeals).click();
 //	  ngWebDriver.waitForAngularRequestsToFinish(); 
 
@@ -50,7 +50,7 @@ public class KDTwistydata {
 public void plusmiustwistie() throws InterruptedException{
 	  
 //	  test = extent.createTest("plusmiustwistie");
-	  
+	  driver.findElement(By.xpath("//*[@class='expand-icon']")).click();
 	System.out.println("To Test whether +/- buttons are working or not");
 	WebElement button = driver.findElement(locatorClass.kd_Twisty_PlusIcon);
 	button.click();

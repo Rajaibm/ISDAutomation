@@ -57,6 +57,7 @@ public class KPISummaryDetail  {
 	  WebElement VPdata = driver.findElement(locatorClass.kpi_Name_VP);
 	  WebElement Vpvalue = driver.findElement(locatorClass.kpi_Value_VP);
 	  WebElement VPKPI = driver.findElement(locatorClass.VPKPI);
+	  Thread.sleep(200);
 	  VPKPI.click();
 	  String VP$Value=Vpvalue.getText().replaceAll("[^0-9.]", "");
 	  System.out.println(VP$Value);

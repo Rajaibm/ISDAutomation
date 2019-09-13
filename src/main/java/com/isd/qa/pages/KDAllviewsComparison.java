@@ -39,8 +39,11 @@ public class KDAllviewsComparison {
 public void views_SummaryDtl() throws InterruptedException {
 
 		driver.findElement(locatorClass.tab_KeyDeals).click();
+		 //driver.findElement(By.xpath("//*[@class='expand-icon']")).click();
+		 driver.findElement(By.xpath("//*[@style='cursor:pointer'][2]")).click();
+		 
 		driver.manage().timeouts().pageLoadTimeout(200, TimeUnit.SECONDS);
-		List<WebElement> cursoricon = driver.findElements(locatorClass.topNav_ExpColl);
+		/*List<WebElement> cursoricon = driver.findElements(locatorClass.topNav_ExpColl);
 		System.out.println("**************");
 		if (cursoricon.size()>0) {
 			driver.findElement(locatorClass.topNav_ExpColl).click();	
@@ -50,7 +53,7 @@ public void views_SummaryDtl() throws InterruptedException {
 			
 			WebElement clicksomewhere= driver.findElement(locatorClass.click_Somewhere_Outside);
 			clicksomewhere.click();
-		}		
+		}		*/
 	
 		WebElement viewtxt = driver.findElement(locatorClass.kd_View_Label);
 		System.out.println(viewtxt.getText());

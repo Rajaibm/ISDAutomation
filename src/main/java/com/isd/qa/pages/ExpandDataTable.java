@@ -47,8 +47,8 @@ Thread.sleep(300);
 Executivesummarytab.click();
 SoftAssert softAssert = new SoftAssert();
 WebDriverWait wait = new WebDriverWait(driver, 5000);
-wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[@class='expandOrCollapseGraphIcons']")));
-  List <WebElement> graphExpand = driver.findElements(By.xpath("//*[@class='expandOrCollapseGraphIcons']"));
+wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[@name='icon--maximize']")));
+  List <WebElement> graphExpand = driver.findElements(By.xpath("//*[@name='icon--maximize']"));
   for(int i =0; i < graphExpand.size(); i++) {
 		graphExpand .get(i).click();
 		System.out.println("Graph Expanded");
@@ -61,7 +61,7 @@ wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[@cl
 	    closetable.click();
 	    softAssert.assertAll();
 	}
-  
+ 
 }
 
 @Test
@@ -70,9 +70,9 @@ public void  APexpandtable() throws InterruptedException {
   System.out.println("Aggregated Pipeline");
   Aggtab.click();
   WebDriverWait wait = new WebDriverWait(driver, 5000);
-  wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[@class='expandOrCollapseGraphIcons']")));
+  wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[@name='icon--maximize']")));
   SoftAssert softAssert = new SoftAssert();
-  List <WebElement> graphExpand = driver.findElements(By.xpath("//*[@class='expandOrCollapseGraphIcons']"));
+  List <WebElement> graphExpand = driver.findElements(By.xpath("//*[@name='icon--maximize']"));
   for(int i =0; i < graphExpand.size(); i++) {
 		graphExpand .get(i).click();
 		System.out.println("Graph Expanded");
@@ -94,9 +94,9 @@ public void  APexpandtable() throws InterruptedException {
     System.out.println("Segmented Pipeline");
     Segtab.click();
     WebDriverWait wait = new WebDriverWait(driver, 5000);
-    wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[@class='expandOrCollapseGraphIcons']")));
+    wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[@name='icon--maximize']")));
     SoftAssert softAssert = new SoftAssert();
-    List <WebElement> graphExpand = driver.findElements(By.xpath("//*[@class='expandOrCollapseGraphIcons']"));
+    List <WebElement> graphExpand = driver.findElements(By.xpath("//*[@name='icon--maximize']"));
     for(int i =0; i < graphExpand.size(); i++) {
   		graphExpand .get(i).click();
   		System.out.println("Graph Expanded");
@@ -118,9 +118,9 @@ public void  APexpandtable() throws InterruptedException {
     System.out.println("Roadmap");
     Roadmaptab.click();
     WebDriverWait wait = new WebDriverWait(driver, 5000);
-    wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[@class='expandOrCollapseGraphIcons']")));
+    wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//*[@name='icon--maximize']")));
     SoftAssert softAssert = new SoftAssert();
-    List <WebElement> graphExpand = driver.findElements(By.xpath("//*[@class='expandOrCollapseGraphIcons']"));
+    List <WebElement> graphExpand = driver.findElements(By.xpath("//*[@name='icon--maximize']"));
     for(int i =0; i < graphExpand.size(); i++) {
   		graphExpand .get(i).click();
   		System.out.println("Graph Expanded");

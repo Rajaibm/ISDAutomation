@@ -2,6 +2,8 @@ package com.isd.qa.base;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeSuite;
@@ -22,6 +24,8 @@ public static WebDriver driver = null;
 	driver.manage().deleteAllCookies();
 	driver.manage().window().maximize();
 	driver.get("https://skyline.epm-sales-staging.us-south.containers.appdomain.cloud/esa-skyline-ibm-dev/uiappltest/");
+	//driver.get("https://skylinestag.epm-sales-staging.us-south.containers.appdomain.cloud/esa-skyline-ibm-dev/epmsales/");
+	//driver.get("https://skyline.epm-sales-production.us-south.containers.appdomain.cloud/sales/management-dashboard/");
 		  
 	}
 }

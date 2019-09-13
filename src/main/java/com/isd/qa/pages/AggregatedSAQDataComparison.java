@@ -27,7 +27,8 @@ public class AggregatedSAQDataComparison {
 	@FindBy(how = How.XPATH, using = "//*[@id='seg']")WebElement Segtab;
 	@FindBy(how = How.XPATH, using = "//*[@id='roadmap']")WebElement Roadmaptab;
 	@FindBy(how = How.XPATH, using = "//h4[text()='SALES ACTION QUADRANTS']")WebElement saqgraphTitle ;
-	@FindBy(how = How.XPATH, using = "//h4[text()='SALES ACTION QUADRANTS']//..//*[@class='expandOrCollapseGraphIcons']")WebElement saqgraphMaximize ;
+	@FindBy(how = How.XPATH, using = "//h4[text()='SALES ACTION QUADRANTS']//..//*[@name='icon--maximize']")WebElement saqgraphMaximize ;
+	@FindBy(how = How.XPATH, using = "//h4[text()='SALES ACTION QUADRANTS']//..//*[@name='icon--minimize']")WebElement saqgraphMinimize ;
 	@FindBy(how = How.XPATH, using = "(//h4[text()='SALES ACTION QUADRANTS']//..//*[text()='PROBE']/..)[1]")WebElement saqProbeTxt ;
 	@FindBy(how = How.CSS, using = "atatable-body.datatable-body datatable-row-wrapper:nth-of-type(2)")WebElement saqtblProbeData;
 	@FindBy(how = How.XPATH, using = "//div[text()='CLOSE']")WebElement saqClose;
@@ -82,7 +83,7 @@ public class AggregatedSAQDataComparison {
 		   Assert.assertEquals(pvalue,value);
 		  
 	      softassert.assertAll();
-	      ExpandTable.click();
+	      saqgraphMinimize.click();
   }
   
   @Test(priority=3)
@@ -101,7 +102,7 @@ public class AggregatedSAQDataComparison {
       actions.moveToElement(CloseData ).build().perform();
 		  String Actual= saqCloseTxt.getText();
 
-		  String Data = CloseData.getText().toString().replace("$", "").replace("M","").replace("CLOSE", "");
+		  String Data = CloseData.getText().toString().replace("$", "").replace("M","").replace("CLOSE", "").replace("", "").replace("", "");
 		  double PD= Double.valueOf(Data);
 		  int pvalue = (int)Math.round(PD);
 		  
@@ -116,7 +117,7 @@ public class AggregatedSAQDataComparison {
 		   Assert.assertEquals(pvalue,value);
 		  
 	      softassert.assertAll();
-	      ExpandTable.click();
+	      saqgraphMinimize.click();
   }
 	 
 
@@ -153,7 +154,7 @@ public class AggregatedSAQDataComparison {
 		   Assert.assertEquals(pvalue,value);
 		  
 	      softassert.assertAll();
-	      ExpandTable.click();
+	      saqgraphMinimize.click();
   }
 	 
   
@@ -189,7 +190,7 @@ public class AggregatedSAQDataComparison {
 		   Assert.assertEquals(pvalue,value);
 		  
 	      softassert.assertAll();
-	      ExpandTable.click();
+	      saqgraphMinimize.click();
   }
 	 
   

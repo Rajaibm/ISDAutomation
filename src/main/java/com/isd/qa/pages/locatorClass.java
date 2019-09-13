@@ -23,6 +23,7 @@ public class locatorClass {
 	By tab_SegPipe = By.xpath("//*[@id='seg']");
 	By tab_Roadmap = By.xpath("//*[@id='roadmap']");
 	By tab_KeyDeals = By.xpath("//*[@id='keydeals']");
+	By tab_milestone = By.xpath("//*[@id='milestone']");
 	
 	
 	//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -30,8 +31,8 @@ public class locatorClass {
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	
 	
-	By topNav_ExpColl = By.cssSelector(".col-md-12 span.tableItemBtn"); 
-	By topNav_View_ArrowWrapper = By.xpath("//carbon-dropdown[@id='bread_VIEW']//span[@class='ng-arrow-wrapper']");
+	By topNav_ExpColl = By.xpath("//*[@style='cursor:pointer']");
+	By topNav_View_ArrowWrapper = By.xpath("//carbon-dropdown[@id='bread_GROUP']//span[@class='ng-arrow-wrapper']");
 	
 	
 	//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -71,8 +72,8 @@ public class locatorClass {
 	By kpi_to_DealList = By.xpath("//datatable-body[@class='datatable-body']");
 	By kpi_DL_Header = By.xpath("(//p[@class='headertext'])[1]");
 	By kpi_DL_LiCol = By.cssSelector("#skylineDealListModal .datatable-row-wrapper div.col-md-2:nth-of-type(2)");
-	By kpi_DL_CloseIcon = By.xpath("(//*[@class='bx--modal-close__icon ng-star-inserted'])[1]"); 
-	By kpi_DL_CloseIcon1 = By.xpath("(//*[@class='bx--modal-close__icon ng-star-inserted'])[2]"); 
+	By kpi_DL_CloseIcon = By.xpath("//*[@class='bx--modal-close__icon ng-star-inserted']//*[@fill-rule='nonzero']"); 
+	By kpi_DL_CloseIcon1 = By.xpath("(//*[@class='bx--modal-close__icon ng-star-inserted']//*[@fill-rule='nonzero'])[2]"); 
 	
 	//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
              //      ------------ EXPAND/COLLAPSE - GRAPH AND TABLE -------------------------
@@ -99,8 +100,8 @@ public class locatorClass {
            //      ------------ KEY DEALS -------------------------
    //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	
-	By kd_View_Label = By.xpath("//label[text()='VIEW : ']"); 
-	By kd_View_DropDown = By.xpath("//carbon-dropdown[@id='bread_VIEW']");
+	By kd_View_Label = By.xpath("//*[text()='GROUP : ']"); 
+	By kd_View_DropDown = By.xpath("//carbon-dropdown[@id='bread_GROUP']");
 	By kd_View_Options = By.xpath("//div[@class='ng-dropdown-panel-items scroll-host']//div[@role='option']");
 	public String kd_View_Options_Path = "//div[@class='ng-dropdown-panel-items scroll-host']//div[@role='option']";
 	By kd_Li_Header_Value = By.xpath("(//p[@class='headertext'])[2]");
@@ -118,7 +119,7 @@ public class locatorClass {
 	By kd_Pagination = By.xpath("(//div[@class='skp-select'])[1]");
 	By kd_Pagination_Loop = By.xpath("//div[@role='option']");
 	By kd_Oppty_Col = By.cssSelector("#skylineTransactionalKeydealsTable .datatable-row-wrapper div .col-md-3:nth-of-type(3)");
-	By kd_Pages_List = By.xpath("(//div[@class='ng-value-container']//child::input)[7]");
+	By kd_Pages_List = By.xpath("(//div[@class='ng-value-container']//child::input)[8]");
 
 	//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
                //      ------------ ROADMAP -------------------------
@@ -152,5 +153,5 @@ public class locatorClass {
 	By click_Somewhere_Outside = By.xpath("//div[@class='col-md-6 col-sm-6 col-xs-6']");
 	By gearIcon = By.cssSelector("carbon-overflow-menu[icon-name='settings']");
 	By gear_NewFilterView = By.xpath("//div[text()=' NEW FILTERS/VIEWS ']");
-	By cancel_Icon = By.xpath("(//button[@class='bx--modal-close ng-star-inserted'])[2]");
+	By cancel_Icon = By.xpath("(//*[@class='bx--modal-close__icon ng-star-inserted']//*[@fill-rule='nonzero'])[2]");
 }
